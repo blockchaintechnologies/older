@@ -1,0 +1,281 @@
+<head>
+
+<link rel="stylesheet" href="css/foundation.css">
+
+
+</head>
+
+<div class="grid-container">
+
+    <div class="grid-x grid-padding-x">
+
+        <div class="large-3 medium-3 cell">
+            NETWORK
+        </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-3 medium-3 cell">
+            <select id="network">
+                <option>http://127.0.0.1:8545</option>
+                <option>http://34.206.37.97:8545/</option>
+                <option>https://rinkeby.infura.io</option>
+            </select>
+
+        </div>
+        <div class="large-3 medium-3 cell">
+            <input type="button" id="setprovider" class="button hollow" value="Set Provider">
+        </div>
+
+    </div>
+
+    <hr>
+    <!-- &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; -->
+    <div class="grid-x grid-padding-x">
+    <div class="large-6 medium-6 small-6 cell">
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 medium-6 cell">
+                    <label>ABI</label>
+                    <input id="abi" class="userAddress" value="" type="text" placeholder="{sadsdasdas" />
+                </div>
+                <div class="large-6 medium-6 cell">
+                    <label>Contract Address</label>
+                    <input id="contract_address" class="userAddress" value="" type="text" placeholder="0xd45344gbre08we..." />
+                </div>
+
+            </div>
+
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 cell">
+                    <button type="button" id="set_abi" class="button hollow">Set ABI</button>
+                </div>
+                <div class="large-6 cell">
+                    <button type="button" id="set_caddress" class="button hollow">Set Contract Address</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; -->
+
+
+    <div class="grid-x grid-padding-x">
+
+
+        <div class="large-6 medium-6 small-6 cell">
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 medium-6 cell">
+                    <label>Seed</label>
+                    <input id="addressSeed" class="userAddress" value="synapse" type="text" placeholder="synapse" />
+                </div>
+                <div class="large-6 medium-6 cell">
+                    <label>Private Key String</label>
+                    <input id="pkin" class="userAddress" value="" type="text" placeholder="0xd45344gbre08we..." />
+                </div>
+
+            </div>
+
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 cell">
+                    <button type="button" id="signin" class="button hollow">Sign In via Seed</button>
+                </div>
+                <div class="large-6 cell">
+                    <button type="button" id="signinpk" class="button hollow">Sign In via Private Key</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="large-6 medium-6 small-6 cell">
+            Address:
+            <b class="userFakePk" id="fakeAddress">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</b>
+            <b class="userAddress" id="currentUserAddressSpan" style="display: none;">0xd8f29cb99a1d99397d733df77155419e86e30f87</b>
+            <br> Private Key:
+            <b class="userFakePk" id="fakePK">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</b>
+            <b class="userPrivateKey" id="currentUserPrivateKeySpan" style="display: none;">0x3090ba3400d47ca819fc5a5029c82b0f334cfc5d3c093d5dae1b05374f526c6f</b>
+            <br> Balances: <b class="userBalances" id="currentUserBalancesSpan">0 GEN - 0 ETH</b>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <hr>
+    <!-- &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; -->
+    <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 cell">
+                    INITIALIZE
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-3 cell">
+                    <label>init gas</label>
+                    <input id="init_gas" class="userAddress" value="4700000" type="text" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <label>Token Address</label>
+                    <input id="token_address" class="userAddress" value="" type="text" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <label>PreBlock</label>
+                    <input id="preblock" class="userAddress" value="" type="text" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <label>Blackout Block</label>
+                    <input id="blackoutblock" class="userAddress" value="" type="text" placeholder="" />
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-3 cell">
+                    <label>ICO Block</label>
+
+                    <input id="icoblock" class="userAddress" value="" type="text" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <label>End Block</label>
+                    <input id="endblock" class="userAddress" value="" type="text" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <label>Base Rate</label>
+                    <input id="baseRate" class="userAddress" value="" type="text" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <label>PreICO Rate</label>
+                    <input id="preICORate" class="userAddress" value="" type="text" placeholder="" />
+                </div>
+            </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-6 cell">
+            <button type="button" class="button hollow " id="initialize">Initialize ICO</button>
+        </div>
+    </div>
+            <hr>
+    <!-- &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; -->
+
+    <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 cell">
+                   QUERY 
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-3 cell">
+                    <input id="getPeriod" class="button hollow" value="Get Period" type="button" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <input id="blocksInPeriod" class="button hollow" value="Get Blocks" type="button" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <input id="remaining_tokens" class="button hollow" value="Remaing Tokens" type="button" placeholder="" />
+                </div>
+                <div class="large-3 medium-3 cell">
+                    <input id="holder_count" class="button hollow" value="Holder Count" type="button" placeholder="" />
+                </div>
+            </div>
+
+
+            <hr>
+    <!-- &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; -->
+
+
+
+
+
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-3 medium-3 cell">
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 cell">
+                    BUY
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 cell">
+                    <label>Amount</label>
+                    <input id="buyAmount" class="userAddress" value="" type="text" placeholder="500" />
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <button type="button" class="button hollow " id="buy">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="large-3 medium-3 cell">
+
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 cell">
+                    TRANSFER
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 medium-6 cell">
+                    <label>Amount</label>
+                    <input id="transferAmount" class="userAddress" value="" type="text" placeholder="500" />
+                </div>
+                <div class="large-6 medium-6 cell">
+                    <label>Unit</label>
+                    <select id="transferCurrency">
+                        <option>ETH</option>
+                        <option>GEN</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 cell">
+                    <label>Address</label>
+                    <input id="transferDestination" class="userAddress" value="" type="text" placeholder="0x0b123cfd09bccc0d12ed1020e7e220ee2811211aee7" />
+                </div>
+
+            </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-6 cell">
+            <button type="button" class="button hollow " id="transfer">Send</button>
+        </div>
+    </div>
+        </div>
+
+    </div>
+
+    <!-- &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; -->
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-6 cell">
+            <input type="button" class="button hollow " id="clear_console" value="Clear Console">
+            <div id="console" class="panel-body" style="height:200px;overflow-y:auto">
+        </div>
+    </div>
+
+
+
+</div>
+
+<!-- end grid container -->
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/foundation.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(document).foundation();
+    });
+</script>
+
+<script type="text/javascript" src="./js/lib/web3.min.js"></script>
+<script type="text/javascript" src="./js/lib/ethereumjs-tx.js"></script>
+<script type="text/javascript" src="./js/lib/ethereumjs-wallet-hd.js"></script>
+<script type="text/javascript" src="./js/lib/buffer.js"></script>
+<script type="text/javascript" src="./abi.js"></script>
+<script type="text/javascript" src="./js/synapse.js"></script>
